@@ -841,7 +841,7 @@ function convertDimensionToPx(dimen) {
 }
 
 function showLastUpdate(repo) {
-    $.get("https://api.github.com/repos/inloop/" + repo + "/git/refs/heads/gh-pages")
+    $.get("https://api.github.com/repos/chengxingyao/" + repo + "/git/refs/heads/gh-pages")
         .done(function (data) {
             $.get(data.object.url)
                 .done(function (data) {
